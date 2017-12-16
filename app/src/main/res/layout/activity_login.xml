@@ -31,11 +31,11 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="@color/img_bg"
-                    android:src="@drawable/cine"
-                    />
+                    android:src="@drawable/vacaciones"
+                    android:scaleType="centerCrop"/>
 
                 <TextView
                     style="@style/TextAppearance.AppCompat.Title.Inverse"

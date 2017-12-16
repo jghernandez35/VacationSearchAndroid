@@ -7,8 +7,8 @@
 
     <data>
         <variable
-            name="pelicula"
-            type="unicauca.movil.peliculas.models.Pelicula"/>
+            name="paquete"
+            type="unicauca.movil.peliculas.models.Paquetes"/>
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -64,7 +64,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/iconTime"
                     tools:text="Duracion"
-                    android:text="@{pelicula.duracion}"
+                    android:text="@{paquete.nombre}"
                     />
 
                 <TextView
@@ -77,8 +77,8 @@
                     app:layout_constraintBottom_toBottomOf="@+id/iconDate"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/iconDate"
-                    tools:text="Fecha"
-                    android:text="@{pelicula.estreno}"
+                    tools:text="Precio"
+                    android:text="@{paquete.precio}"
                     />
             </android.support.constraint.ConstraintLayout>
 
@@ -114,7 +114,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/desTitle"
                     tools:text="Descripcion ..."
-                    android:text="@{pelicula.sinopsis}"
+                    android:text="@{paquete.descripcion}"
                     />
 
                 <TextView

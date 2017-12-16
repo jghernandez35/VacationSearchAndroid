@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="login_img">280dp</dimen>
+    <dimen name="login_img">283dp</dimen>
     <dimen name="login_img_elevation">12dp</dimen>
     <dimen name="small">10dp</dimen>
     <dimen name="icon">30dp</dimen>
     <dimen name="medium">20dp</dimen>
     <dimen name="img_template">160dp</dimen>
+    <dimen name="header">140dp</dimen>
 </resources>

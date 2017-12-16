@@ -5,16 +5,15 @@ import android.arch.persistence.room.Ignore
 import android.arch.persistence.room.PrimaryKey
 
 @Entity
-data class Pelicula(var nombre: String,
-                    var duracion: String,
-                    var estreno: String,
+data class Paquetes(var nombre: String,
+                    var precio: Int,
                     var imagen: String,
-                    var sinopsis: String){
+                    var descripcion: String){
     @PrimaryKey(autoGenerate = true)
     var id: Long? = null
 
     @Ignore
-    constructor():this("","","","","")
+    constructor():this("",0,"","")
 }
 
 

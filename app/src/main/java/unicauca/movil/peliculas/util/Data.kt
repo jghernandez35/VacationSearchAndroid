@@ -1,29 +1,133 @@
 package unicauca.movil.peliculas.util
 
+import unicauca.movil.peliculas.models.Paquetes
 import unicauca.movil.peliculas.models.Pelicula
 
-object Data {
+object Data : List<Pelicula> {
+    override val size: Int
+        get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
+
+    override fun contains(element: Pelicula): Boolean {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun containsAll(elements: Collection<Pelicula>): Boolean {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun get(index: Int): Pelicula {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun indexOf(element: Pelicula): Int {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun isEmpty(): Boolean {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun iterator(): Iterator<Pelicula> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun lastIndexOf(element: Pelicula): Int {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun listIterator(): ListIterator<Pelicula> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun listIterator(index: Int): ListIterator<Pelicula> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun subList(fromIndex: Int, toIndex: Int): List<Pelicula> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     var peliculas: MutableList<Pelicula> = mutableListOf(
-            Pelicula("Wonder Woman", "210 min", "30 de Mayo",
-                    "http://static.dnaindia.com/sites/default/files/2017/03/11/555566-wonder-woman-poster.jpg",
-                    "Diana, una princesa guerrera perteneciente al pueblo de las amazonas, fue criada en una isla protegida y entrenada para ser una luchadora invencible. Después de que un piloto estadounidense, Steve Trevor, se estrellase en dicha isla, es salvado por la princesa, a quien le relata sobre el desarrollo de una guerra mundial que está sucediendo. Entonces, Diana sale de su hogar para tratar de detener la guerra."),
+            Pelicula("PARQUE DEL CAFE", "120000", "10 de Enero",
+                    "http://portalesdelcafe.com/wp-content/uploads/2016/08/parcafe.jpg",
+                    "1. Alojamiento por cuatro noches cinco días en acomodación doble o triple en los Hoteles previstos:\n" +
+                            "\n" +
+                            "* Miércoles: Guadalajara de Buga y/o Hostal del Regidor.\n" +
+                            "* Jueves y viernes: hotel Tocurinca del Quindío (una hermosa finca-hotel) y/o el Hostal de la Vega.\n" +
+                            "* Sábado, Dann Cali y/o Torre de Cali.\n" +
+                            "\n" +
+                            "2. Alimentación descrita en el programa: DOS COMIDAS DIARIAS (desayunos, almuerzos o cenas), durante la excursión\n" +
+                            "\n" +
+                            "3. Transporte para realizar el itinerario descrito en la programación\n" +
+                            "\n" +
+                            "4. Tiquete de ingreso a:\n" +
+                            "\n" +
+                            "* Parque Nacional del Café\n" +
+                            "* Parque Nacional de la Cultura Agropecuaria PANACA con ingreso al Mundo del Caballo que es espectacular y demás atracciones del parque\n" +
+                            "* Zoológico de Cali\n" +
+                            "* Hacienda El Paraíso\n" +
+                            "* Museo de la Caña de Azúcar\n" +
+                            "\n" +
+                            "5. Guía acompañante desde que los turistas llegan a la ciudad de Cali\n" +
+                            "\n" +
+                            "6. Rifas durante el recorrido de varios ejemplares del libro “Turismo Un Sueño por la Paz” de Belisario Marín Montes responsable de este programa. (El más económico de cuantos se han diseñado en la historia del turismo colombiano). Hasta agotar existencia\n" +
+                            "\n" +
+                            "7. Visita a la Basílica del Señor de los Milagros de Buga\n" +
+                            "\n" +
+                            "8. Cóctel de bienvenida en los hoteles de Cali, Buga y Quindío\n" +
+                            "\n" +
+                            "9. Refrigerio en la ciudad de Buga"),
 
-            Pelicula("Alien Covenan", "220 min", "18 de Mayo",
-                    "https://www.diariodemorelos.com/noticias/sites/default/files/field/image/alien%20diario%20de%20morelos.jpg",
-                    "En 2104, la nave colonial Covenant, con 2000 colonos y 1400 embriones a bordo, se dirige al remoto planeta Origae-6, vigilados por el androide Walter. Una onda de radiación neutrónica daña la nave, matando al capitán y despertando a la tripulación. Mientras reparan los daños, la tripulación detecta una señal de radio de origen humano procedente de un planeta cercano que aparentemente no tiene vida. En contra del criterio de Daniels, la experta en terraformación, el capitán Oram, oficial ejecutivo de la nave, decide investigar."),
+            Pelicula("SILVIA", "190000", "18 de Mayo 2017",
+                    "https://media-cdn.tripadvisor.com/media/photo-s/0f/10/39/7b/silvia-cauca-pueblo-de.jpg",
+                    "1. Transporte terrestre Cali – Silvia – Cali\n" +
+                            "2. Alojamiento la noche del día uno (sábado – lunes o miércoles) en la Casa Turística de Silvia con base en acomodación Doble – Triple o Cuádruple (2–3 o 4) personas por habitación.\n" +
+                            "3. Toda la alimentación (tres comidas diarias) desde el refrigerio de bienvenida hasta el almuerzo del día dos (domingo – martes o jueves) .\n" +
+                            "4. Noche musical de integración (si hay hospedados en la casa más de 15 quince personas).\n" +
+                            "5. Guía de turismo desde Cali, si el grupo de turistas es superior a veinte personas.\n" +
+                            "6. Visita a la casa museo con las mejores artesanías de Colombia y el mundo."),
 
-            Pelicula("Justice League", "240 min", "16 de Noviembre",
-                    "http://www.cheatsheet.com/wp-content/uploads/2016/07/Justice-League-first-image.jpg",
-                    "Alimentado por su restaurada fe en la humanidad e inspirado por el acto desinteresado de Superman, Bruce Wayne recluta la ayuda de su recién encontrada aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman trabajan deprisa para encontrar y reclutar un equipo de metahumanos para plantar cara a esta nueva amenaza creciente. Pero pese a la formación de esta liga de héroes sin precedentes – Batman, Wonder Woman, Aquaman, Cyborg y Flash, quizás sea demasiado tarde para salvar el planeta de un asalto de proporciones catastróficas."),
+            Pelicula("LLANOS ORIENTALES", "650000", "15 ENERO 2017",
+                    "https://viajesvillanuevaltda.com/wp-content/uploads/2015/05/llanos-orientales-viajes-villanueva1.png",
+                    "1. Alojamiento por tres noches cuatro días en el HOTEL CAMPESTRE CAMPANARIO 5 ESTRELLAS con base en acomodación doble o triple.\n" +
+                            "2. Alimentación claramente descrita en el programa.\n" +
+                            "3. Transporte terrestre desde Bogotá para realizar el itinerario descrito\n" +
+                            "4. Traslado y tiquete de ingreso al Bioparque los Ocarros.\n" +
+                            "5. Guía Acompañante de turismo para visitar los grandes atractivos que nos ofrecen los Llanos Orientales.\n" +
+                            "6. Visita a la ciudad de Villavicencio y los Municipios de Guamal, Acacias, Restrepo y Cumaral\n" +
+                            "7. Atención especial a quienes celebren su cumpleaños y/o aniversario de bodas\n" +
+                            "8. Visita a la Hacienda Marsella para disfrutar de un paseo en Buggy y admirar la flora y fauna de los Llanos Orientales\n" +
+                            "9. Visita al hermoso complejo turístico LA CATIRA\n" +
+                            "10.Traslado e ingreso al Parque Malocas.\n" +
+                            "11. Citytour en chiva con demostración de joropo.\n" +
+                            "12.Tarjeta de asistencia médica"),
 
-            Pelicula("La Momia", "190 min", "08 de Junio",
-                    "http://www.carlost.net/wp-content/uploads/2016/12/La-Momia-2017-Trailer-Subtitulado-Carlost.jpg",
-                    "Tras encontrar y desenterrar a una momia perteneciente a una antigua princesa egipcia (Sofia Boutella) cuyo destino le fue arrebatado injustamente, un grupo de comandos militares trasladan la momia a Londres. Sin embargo, la momia despierta en mitad del vuelo, desencadenando el caos y comenzando su venganza."),
+            Pelicula("BOYACÁ ESPECIAL ILUMINACIONES", "490000", "20 feb 2017",
+                    "https://cuponassets.cuponatic-latam.com/backendCo/uploads/imagenes_descuentos/111850/e7a5a7d7cb1c62763b24130ba3c5635ad41de530.XL2.jpg",
+                    "• Alojamiento por 2 noches en Paipa con base en acomodación doble o triple.\n" +
+                            "• Alimentación claramente descrita en el programa.\n" +
+                            "• Transporte terrestre en bus para realizar el itinerario descrito en este programa.\n" +
+                            "• Visita al Monumento del Puente de Boyacá, Pantano de Vargas y a los municipios de Nobsa, Sogamoso,\n" +
+                            "Pueblito Boyacense, Corrales, Villa de Leyva, La Catedral de Tunja y la Catedral de Chiquinquirá.\n" +
+                            "• Visita y recorrido en lancha por el Lago Tota.\n" +
+                            "• Ingreso al Parque Acuático termal en Paipa.\n" +
+                            "• Atención especial para quienes celebren su cumpleaños o aniversario dentro de la excursión.\n" +
+                            "• Guía acompañante especializada desde Bogotá durante todo el recorrido."),
 
-            Pelicula("Spiderman", "190 min", "13 de Julio",
-                    "http://sm.ign.com/ign_latam/screenshot/default/spidermanhomecomingposter_u8zq.jpg",
-                    "Después de los acontecimientos de Capitán América: Civil War, Peter Parker, con la ayuda de su mentor Tony Stark, trata de equilibrar su vida como un estudiante de secundaria ordinaria en Queens, Nueva York con su lucha contra el crimen como su superhéroe alter ego Spider-Man mientras una nueva amenaza, el Buitre, aparece.")
+            Pelicula("VALLECAUCANIDAD", "95000", "13 de Julio 2017",
+                    "http://cumbreap2017.cancilleria.gov.co/sites/default/files/inline-images/ErmitaBulevarCalil78FinalA.jpg",
+                    "1. Transporte terrestre para realizar el itinerario de este programa.\n" +
+                            "2. Tiquete de ingreso a la Hacienda El Paraíso.\n" +
+                            "3. Museo de la Caña de Azúcar\n" +
+                            "4. Guías que acompañarán a los turistas durante todo el recorrido.\n" +
+                            "5. Tiquete de ingreso al museo Aéreo Fénix.\n" +
+                            "6. Espectacular Sancocho de Gallina vallecaucano servido en las instalaciones del hermoso Complejo\n" +
+                            "Turístico Siga la Vaca.\n" +
+                            "7. Utilización de los servicios que ofrece el Complejo Turístico Siga la Vaca como las piscinas, canchas\n" +
+                            "deportivas y juegos para niños entre otros.\n" +
+                            "8. Rifas durante el viaje de varios ejemplares del libro: “Turismo, un sueño por la Paz” del señor Belisario\n" +
+                            "Marín Montes responsable de este programa, (hasta agotar existencia).\n" +
+                            "9. Celebración especial de cumpleaños, aniversario de bodas o fechas especiales.")
 
     )
 
