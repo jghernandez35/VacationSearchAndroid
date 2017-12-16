@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Peliculas</string>
+
+    <string name="title">Estrenos</string>
+    <string name="signin">Registrate</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="description">Descripcion</string>
+    <string name="comedy">Comedia</string>
+    <string name="action">Accion</string>
+    <string name="horror">Terror</string>
+    <string name="drama">Drama</string>
+    <string name="fantasy">Fantasia</string>
+    <string name="scifi">Scifi</string>
+    <string name="adventure">Aventura</string>
+</resources>
